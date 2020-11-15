@@ -1,5 +1,5 @@
 function App() {
-  return <div>IDP-v2</div>;
+  return <div>IDP-v2-dev</div>;
 }
 
 export default App;
