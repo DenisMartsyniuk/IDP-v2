@@ -20,9 +20,10 @@
     "eject": "react-scripts eject",
     "lint": "npm run lint:js",
     "lint:eslint": "eslint --ignore-path .gitignore",
-    "lint:eslint:fix": "eslint --ignore-path .gitignore --fix",
+    "lint:eslint:fix": "eslint --fix",
     "lint:js": "npm run lint:eslint -- . ",
-    "lint:staged": "lint-staged"
+    "lint:staged": "lint-staged",
+    "prettify": "prettier --write"
   },
   "lint-staged": {
     "*.js": [
