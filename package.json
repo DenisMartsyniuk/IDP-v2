@@ -29,19 +29,9 @@
     "*.js": [
       "npm run lint:eslint:fix",
       "git add --force"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add --force"
     ]
   },
   "pre-commit": "lint:staged",
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
   "browserslist": {
     "production": [
       ">0.2%",
