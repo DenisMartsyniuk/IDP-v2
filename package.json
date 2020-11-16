@@ -18,20 +18,20 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "format": "npm run prettier --write",
-    "prettier": "prettier \"src/**/*.{js,jsx,json,css}\"",
-    "lint": "eslint \"src/**/*.{js,jsx,json}\"",
-    "lint:fix": "eslint . --fix"
+    "prettify": "prettier --write",
+    "lint:staged": "lint-staged",
+    "lint:eslint:fix": "eslint --ignore-path .gitignore --fix"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json}": [
-      "npm run format",
-      "npm run lint:fix"
+    "*.js": [
+      "npm run lint:eslint:fix",
+      "npm run prettify",
+      "git add --force"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint:staged"
     }
   },
   "browserslist": {
