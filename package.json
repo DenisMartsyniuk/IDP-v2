@@ -17,21 +17,21 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "lint:staged": "lint-staged",
-    "prettify": "prettier --write",
-    "lint:eslint:fix": "eslint --ignore-path .gitignore --fix"
+    "eject": "react-scripts eject"
   },
   "lint-staged": {
     "*.js": [
-      "npm run lint:eslint:fix",
-      "npm run prettify",
+      "eslint --ignore-path .gitignore --fix",
+      "git add --force"
+    ],
+    "*.json": [
+      "prettier --write",
       "git add --force"
     ]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:staged"
+      "pre-commit": "lint-staged"
     }
   },
   "browserslist": {
