@@ -22,7 +22,6 @@ module.exports = {
       jsx: true,
     },
   },
-
   rules: {
     'prettier/prettier': ['error', prettierOptions],
     'arrow-body-style': [2, 'as-needed'],
