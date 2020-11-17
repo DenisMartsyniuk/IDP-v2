@@ -21,12 +21,10 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --ignore-path .gitignore --fix",
-      "git add --force"
+      "eslint --ignore-path .gitignore --fix"
     ],
     "*.json": [
-      "prettier --write",
-      "git add --force"
+      "prettier --write"
     ]
   },
   "husky": {
