@@ -19,21 +19,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "lint-staged": {
-    "*.js": [
-      "eslint --ignore-path .gitignore --fix",
-      "git add --force"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add --force"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
   "browserslist": {
     "production": [
       ">0.2%",
