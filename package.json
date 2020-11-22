@@ -26,10 +26,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --ignore-path .gitignore --fix",
-      "git add --force"
-    ],
-    "*.json": [
+      "eslint --fix",
       "prettier --write",
       "git add --force"
     ]
