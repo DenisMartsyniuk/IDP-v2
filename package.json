@@ -28,7 +28,7 @@
     "*.js": [
       "eslint --fix",
       "prettier --write",
-      "git add --force"
+      "git add"
     ]
   },
   "browserslist": {
