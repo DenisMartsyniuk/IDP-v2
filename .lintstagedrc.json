@@ -1,4 +1,4 @@
 {
-  "*.js": ["prettier --write"],
+  "*.js": ["eslint --ignore-path .gitignore --fix"],
   "*.json": ["prettier --write"]
 }
